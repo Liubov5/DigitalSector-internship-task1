@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Archivo Black';
+  src: url("../../fonts/ArchivoBlack-Regular.ttf");
+}
+@font-face {
+  font-family: 'Nunito Regular';
+  src: url("../../fonts/Nunito/static/Nunito-Medium.ttf");
+}
 *{
     margin: 0;
     padding: 0;
@@ -27,7 +35,7 @@
   .container {
     max-width: 1244px;
     margin: 0 auto;
-    background-color: orange;
+
   }
 
 /*mobile до 768*/
@@ -43,12 +51,14 @@
   }
 }
 
-  
-// /*desktop от 1279*/
-// @media screen and (min-width: 1279px) {
-//   .container {
-//     max-width: 1244px;
-//     margin: 0 auto;
-//     background-color: orange;
-//   }
-// }
+h1, h2 {
+  font-family: 'Archivo Black';
+} 
+
+p, span, a, li {
+  font-family: 'Nunito Regular';
+}
+p {
+  line-height: 160%;
+  color: #757778;
+}

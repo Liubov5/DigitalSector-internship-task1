@@ -4,19 +4,70 @@
         flex-direction: column;
         background-image: url(../../images/subscribe/bg-sm.svg);
         background-size: cover;
+        height: max-content;
+        margin: 0 auto;
     }
     &__content {
-        padding-top: 100px;
+        // padding-top: 100px;
+        
     }
     &__image {
-        background-image: url(../../images/subscribe/illustration-sm.svg);
-        background-size: cover;
-        height: 400px;
+        
+        img {
+            width: 100%;
+           
+        }
     }
     &__title {
 
     }
     &__description {
         margin-bottom: 90px;
+    }
+}
+
+@media  (max-width: 768px) {
+    .subscribe {
+        &__wrapper {
+            max-width: 350px;
+        }
+    }
+}
+
+/*tablet с 769*/
+@media screen and  (min-width: 769px) { 
+    .subscribe {
+        &__wrapper {
+            height: auto;
+            flex-direction: row;
+            background-image: none;
+           background-color: #57ACBC;
+           border-top-left-radius: 32px;
+           border-bottom-left-radius: 32px;
+           border-top-right-radius: 80px;
+           border-bottom-right-radius: 80px;
+        }
+        &__content {
+            
+            border-top-left-radius: 32px;
+            border-bottom-left-radius: 32px;
+        }
+    }
+
+}
+
+/*desktop от 1279*/
+@media screen and (min-width: 1279px) { 
+    .subscribe {
+        &__wrapper {
+            flex-direction: row;
+            background-color: transparent;
+            background-image: url(../../images/subscribe/bg-xl.svg);
+            background-size: 95%;
+            background-repeat: no-repeat;
+        }
+        &__image {
+            background-color: transparent;
+        }
     }
 }

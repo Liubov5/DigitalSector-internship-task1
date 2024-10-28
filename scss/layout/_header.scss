@@ -1,33 +1,40 @@
 .header {
     &__wrapper {
-        background-color: red;
+        padding-block: 16px;
         display: grid;
         grid-template-columns:repeat(3, 1fr);
     }
 }
 .menu {
-    background-color: green;
-   
+    
     box-sizing: border-box;
     &__list {
         display: flex;
         column-gap: 20px;
     }
     &__item{
-       
         white-space: nowrap;
+        border:1px solid #E8E8E8;
+        border-radius: 20px;
+        padding: 8px 18px;
+        a {
+            font-size: 15px;
+            color: #1B1F21;
+        }
     }
 }
 .logo{
-   background-color: aqua;
+   
 }
 .toolbar {
    display: flex;
-   background-color: antiquewhite;
+  
+   justify-content: flex-end;
+   align-items: center;
 }
 
 /* меню для мобильных */
-@media  (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .menu {
         grid-column: 1 / 4;
         grid-row: 2; 
@@ -40,5 +47,32 @@
     .toolbar {
         grid-column: 3 / 4;
         grid-row: 1;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .menu {
+        grid-column: 1 / 4;
+        grid-row: 2; 
+        overflow-x: hidden;
+    }
+    .logo {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+    .toolbar {
+        grid-column: 3 / 4;
+        grid-row: 1;
+    }
+}
+
+@media screen and (min-width: 1279px)  {
+    .header {
+        &__wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 }

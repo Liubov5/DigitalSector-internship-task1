@@ -51,6 +51,15 @@
         color: white;
     }
 }
+
+/*mobile с 769*/
+@media  (max-width: 768px) {
+    .webinars {
+        &__list {
+            max-width: 450px;
+        }
+    }
+}
 /*tablet с 769*/
 @media screen and  (min-width: 769px) { 
     .webinars {

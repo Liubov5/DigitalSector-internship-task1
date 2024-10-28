@@ -1,7 +1,7 @@
 .ticker {
     overflow: hidden;
     position: relative;
-    background-color: green;
+    
    
     padding-block: 50px;
     &__intro {
@@ -16,6 +16,10 @@
     &__subscribe {
         background-color: #FE6D44;
         transform: rotateZ(2deg);
+        &--discount {
+            transform: rotateZ(0deg);
+            background-color: #DA3369;
+        }
     }
     &__wrapper{
         display: flex;
