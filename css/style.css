@@ -1,11 +1,11 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Archivo Black";
-  src: url("../../fonts/ArchivoBlack-Regular.ttf");
+  src: url("../fonts/ArchivoBlack-Regular.ttf");
 }
 @font-face {
   font-family: "Nunito Regular";
-  src: url("../../fonts/Nunito/static/Nunito-Medium.ttf");
+  src: url("../fonts/Nunito/static/Nunito-Medium.ttf");
 }
 * {
   margin: 0;
