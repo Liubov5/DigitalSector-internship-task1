@@ -1,0 +1,19 @@
+{
+  "name": "ds-internship-verstka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/style.scss css/style.css -w",
+    "dev": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.80.4"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}

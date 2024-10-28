@@ -1,0 +1,22 @@
+.subscribe {
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        background-image: url(../../images/subscribe/bg-sm.svg);
+        background-size: cover;
+    }
+    &__content {
+        padding-top: 100px;
+    }
+    &__image {
+        background-image: url(../../images/subscribe/illustration-sm.svg);
+        background-size: cover;
+        height: 400px;
+    }
+    &__title {
+
+    }
+    &__description {
+        margin-bottom: 90px;
+    }
+}

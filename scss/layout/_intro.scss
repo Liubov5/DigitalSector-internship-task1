@@ -1,0 +1,111 @@
+.intro {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    width: 304px;
+    height: 352px;
+    background-image: url(../../images/articles/gaming.png);
+    background-size: cover;
+    background-position: center -100px;
+    margin: 0 auto;
+    overflow: hidden;
+    mask-image: url("../../images/masks/intro/mask-sm.svg");
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    mask-position: center top;
+  }
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+   
+  }
+}
+
+/*mobile до 768*/
+@media screen and (max-width: 768px) {
+  .intro {
+    &__content {
+        max-width: 450px;
+    }
+  }
+}
+
+/*tablet с 769*/
+@media screen and (min-width: 769px) {
+  .intro {
+  
+    &__image {
+      width: 100%;
+      mask-image: url("../../images/masks/intro/mask-md.svg");
+      background-position-y: center;
+    }
+    &__content {
+      display: grid;
+    }
+    &__title {
+      grid-column: 2;
+    }
+    &__description {
+      grid-column: 2;
+    }
+    &__button {
+      grid-column: 2;
+    }
+    &__date {
+      grid-row: 2;
+      grid-column: 1;
+    }
+  }
+  .tags {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
+
+/*desktop от 1279*/
+@media screen and (min-width: 1279px) {
+  .intro {
+    &__wrapper {
+      flex-direction: row;
+      column-gap: 40px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+    &__image {
+      mask-image: url("../../images/masks/intro/mask-xl.svg");
+      height: 560px;
+      max-width: 480px;
+      background-position-y: bottom;
+    }
+  }
+}
+@media screen and (min-width:877px) and (max-width: 984px) {
+    .intro {
+        &__image {
+            height: 400px;
+        }
+    }
+}
+@media screen and (min-width:985px) and (max-width: 1105px) {
+    .intro {
+        &__image {
+            height: 450px;
+        }
+    }
+}
+
+@media screen and (min-width:1106px) and (max-width: 1278px) {
+    .intro {
+        &__image {
+            height: 500px;
+        }
+    }
+}

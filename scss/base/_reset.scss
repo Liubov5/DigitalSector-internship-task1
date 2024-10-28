@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .container {
+    max-width: 1244px;
+    margin: 0 auto;
+    background-color: orange;
+  }
+
+/*mobile до 768*/
+@media screen and (max-width: 768px) {
+  .container {
+    padding-inline: 8px;   
+  }
+}
+
+@media screen and  (min-width: 769px) {
+  .container {
+    padding-inline: 32px;
+  }
+}
+
+  
+// /*desktop от 1279*/
+// @media screen and (min-width: 1279px) {
+//   .container {
+//     max-width: 1244px;
+//     margin: 0 auto;
+//     background-color: orange;
+//   }
+// }
